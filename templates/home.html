@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>17 Cal Powder Load Prediction App</title>
+</head>
+<body>
+    <h1>17 Cal Powder Load Calculator</h1>
+    <form action="/17cal" method="POST">
+        <h3>Choose Velocity</h3>
+        <select name="velocity">
+            <option value=0> 3.2 Km/s </option>
+            <option value=1> 3.5 Km/s </option>
+            <option value=2> 4 Km/s </option>
+            <option value=3> 4.07 Km/s </option>
+            <option value=4> 4.3 Km/s </option>
+            <option value=5> 4.4 Km/s </option>
+            <option value=6> 4.5 Km/s </option>
+            <option value=7> 4.54 Km/s </option>
+            <option value=8> 4.8 Km/s </option>
+            <option value=9> 4.85 Km/s </option>
+            <option value=10> 4.9 Km/s </option>
+            <option value=11> 5 Km/s </option>
+            <option value=12> 5.05 Km/s </option>
+            <option value=13> 5.2 Km/s </option>
+            <option value=14> 5.3 Km/s </option>
+            <option value=15> 5.4 Km/s </option>
+            <option value=16> 5.5 Km/s </option>
+            <option value=17> 5.7 Km/s </option>
+            <option value=18> 6 Km/s </option>
+            <option value=19> 6.05 Km/s </option>
+            <option value=20> 6.08 Km/s </option>
+            <option value=21> 6.1 Km/s </option>
+            <option value=22> 6.6 Km/s </option>
+            <option value=23> 6.7 Km/s </option>
+            <option value=24> 6.73 Km/s </option>
+            <option value=25> 6.8 Km/s </option>
+            <option value=26> 6.85 Km/s </option>
+            <option value=27> 6.86 Km/s </option>
+            <option value=28> 6.88 Km/s </option>
+            <option value=29> 6.91 Km/s </option>
+            <option value=30> 6.95 Km/s </option>
+            <option value=31> 6.97 Km/s </option>
+            <option value=32> 6.99 Km/s </option>
+            <option selected value=33> 7 Km/s </option>
+            <option value=34> 7.05 Km/s </option>
+            <option value=35> 7.06 Km/s </option>
+            <option value=36> 7.08 Km/s </option>
+            <option value=37> 7.1 Km/s </option>
+            <option value=38> 7.13 Km/s </option>
+            <option value=39> 7.18 Km/s </option>
+            <option value=40> 7.2 Km/s </option>
+            <option value=41> 7.23 Km/s </option>
+            <option value=42> 7.24 Km/s </option>
+            <option value=43> 7.4 Km/s </option>
+            <option value=44> 7.5 Km/s </option>
+            <option value=45> 8 Km/s </option>
+            <option value=46> 8.5 Km/s </option>
+                  
+        </select>
+
+        <h3>Choose Range</h3>
+        <select name="range">
+            <option value=47>.17 / .50" </option>
+            <option value=48>.17 / 1" </option>
+            <option selected value=49>.17 NHR</option>
+        </select>
+
+        <h3>Input Sabot OD</h3>
+        <p> Sabot OD: <input name="sabot" type ="number" step="0.0001" value="0.177" /> </p>
+        <h3>Input LP Mass</h3>
+        <p> LP Mass: <input name="Lpmass" type ="number" step="0.0001" value="0.07" /> </p>
+        <p> <input type ="submit" value="Submit" /> </p>
+
+
+    </form>
+    
+</body>
+</html>
