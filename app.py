@@ -17,12 +17,14 @@ def make_predict():
 
         velocity = request.form['velocity']
         range1 = request.form['range']
+        ar = request.form['ar']
         sabot = request.form['sabot']
         lpmass = request.form['Lpmass']
         sabot = float(sabot)
         lpmass = float(lpmass)
         velocity = int(velocity)
         range1 = int(range1)
+        ar = int(ar)
         
         new_vector[velocity] = 1
 
@@ -44,7 +46,12 @@ def make_predict():
 
         predict = np.array([new_vector])
         y_hat = model.predict(predict) 
-        output = y_hat[0]
+        result = y_hat[0]
+
+        if ar == 50:
+            output = result
+        else:
+            output = result -0.35  
 
         return render_template('result.html', output=output)
 
