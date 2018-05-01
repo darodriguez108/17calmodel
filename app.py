@@ -51,7 +51,7 @@ def make_predict():
         if ar == 50:
             output = result
         else:
-            output = result -0.35  
+            output = result -0.31  
 
         return render_template('result.html', output=output)
 
