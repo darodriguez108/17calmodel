@@ -51,7 +51,7 @@ def make_predict():
         if ar == 50:
             output = result
         else:
-            output = result -0.31  
+            output = ((3,358,139,325,440*(lpmass**5)) - (1,190,249,942,220.58*(lpmass**4)) + (168,731,332,886.914*(lpmass**3)) - (11,958,623,195.2566*(lpmass**2)) + (423,734,956.448111*(lpmass)) - 6,005,160.1262179)
 
         return render_template('result.html', output=output)
 
